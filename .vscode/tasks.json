@@ -1,0 +1,18 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "command": "g++",
+  "args": [
+    "-g",
+    "-o",
+    "main.exe",
+    "-std=c++11",
+    "main.cpp",
+    "-IC:/SFML-2.4.1/include",
+    "-LC:/SFML-2.4.1/lib",
+    "-lsfml-graphics-d",
+    "-lsfml-window-d",
+    "-lsfml-system-d"
+  ]
+}

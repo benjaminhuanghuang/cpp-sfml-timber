@@ -1,0 +1,53 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "/usr/include"
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "macFrameworkPath": [
+        "/System/Library/Frameworks",
+        "/Library/Frameworks"
+      ],
+      "intelliSenseMode": "clang-x64",
+      "compilerPath": "/usr/local/bin/gcc-7",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "Linux",
+      "includePath": [
+        "/usr/include"
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/local/bin/gcc-7",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "Win32",
+      "includePath": [
+        "c:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
+        "C:/SFML-2.4.1/include",
+        "C:/mingw32/include"
+      ],
+      "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "intelliSenseMode": "msvc-x64",
+      "compilerPath": "/usr/local/bin/gcc-7",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

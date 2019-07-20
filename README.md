@@ -2,7 +2,7 @@
 
 
 
-## Resources
+## Assets
 - Image
 
 - Sound
@@ -11,4 +11,3 @@
 
 - Font
   - www.1001freefont.com
-  
