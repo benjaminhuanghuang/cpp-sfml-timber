@@ -10,6 +10,6 @@ find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 
 include_directories(src)
 
-add_executable(timber src/hello-sfml.cpp)
+add_executable(timber src/main.cpp)
 
 target_link_libraries(timber sfml-graphics sfml-audio)

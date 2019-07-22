@@ -1,5 +1,6 @@
 // Include important C++ libraries here
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 
 // Make code easier to type with "using namespace"
 using namespace sf;
@@ -10,12 +11,12 @@ int main()
 	VideoMode vm(800, 600);
 
 	// Create and open a window for the game
-	RenderWindow window(vm, "Timber!!!", Style::Default);
+	RenderWindow window(vm, "Timber!!!");
 
 	// Create a texture to hold a graphic on the GPU
 	Texture textureBackground;
 
-	// Load a graphic into the texture
+	// // Load a graphic into the texture
 	textureBackground.loadFromFile("graphics/background.png");
 
 	// Create a sprite
@@ -27,47 +28,25 @@ int main()
 	// Set the spriteBackground to cover the screen
 	spriteBackground.setPosition(0, 0);
 
-
 	while (window.isOpen())
 	{
-
-		/*
-		****************************************
-		Handle the players input
-		****************************************
-		*/
-
-		if (Keyboard::isKeyPressed(Keyboard::Escape))
+		// check all the window's events that were triggered since the last iteration of the loop
+		sf::Event event;
+		while (window.pollEvent(event))
 		{
-			window.close();
+			// "close requested" event: we close the window
+			if (event.type == sf::Event::Closed)
+				window.close();
 		}
 
-		/*
-		****************************************
-		Update the scene
-		****************************************
-		*/
+		// window.clear();
 
-
-		/*
-		****************************************
-		Draw the scene
-		****************************************
-		*/
-
-		// Clear everything from the last frame
-		window.clear();
-
-		// Draw our game scene here
+		// // Draw our game scene here
 		window.draw(spriteBackground);
 
-		// Show everything we just drew
+		// // Show everything we just drew
 		window.display();
-
-
 	}
 
 	return 0;
 }
-
-
